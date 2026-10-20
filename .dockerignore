@@ -1,0 +1,13 @@
+# Keep the build context to the colony source only.  Never send dependency
+# trees, cached research, local state, credentials, or packaged tarballs.
+node_modules
+.research
+.local
+.git
+.super-colony
+.env
+.env.*
+*.tgz
+coverage
+container/*.log
+container/validation-*

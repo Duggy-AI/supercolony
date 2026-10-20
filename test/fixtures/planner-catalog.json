@@ -1,0 +1,396 @@
+{
+  "skills": [
+    {
+      "id": "adapt-contract-project",
+      "description": "Make a requester's existing Foundry project launchable through its launch factory, changing as little of it as the launch requires.",
+      "role": "implement",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "adversarial-review",
+      "description": "Audit the implementation and its tests for defects an independent reader can reproduce, and write nothing.",
+      "role": "review",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "audit-imported-code",
+      "description": "Audit a requester's contracts as they arrived, before they are adapted to launch, and write nothing.",
+      "role": "review",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "audit-judge",
+      "description": "Merge four specialists' audit reports, reproduce every claim against the code, and decide what the author must fix.",
+      "role": "review",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "audit-specialist",
+      "description": "Audit one area of a contract project in depth, with the Pashov guides for that area, and write nothing.",
+      "role": "review",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "better-interface",
+      "description": "Build and review websites with Better Interface's six design disciplines, rendered browser evidence, and reusable documentation of the implemented design.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "build-contract-project",
+      "description": "Build and test a complete standalone Foundry project without assuming a Uniswap hook.",
+      "role": "implement",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "build-ponder-indexer",
+      "description": "Build and release a Ponder indexer for named contracts, a launched project or a described set of events, as its own repository that deploys to Railway or any Docker host and that later jobs can extend.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "build-website",
+      "description": "Build a responsive Vite and React website, validate it on the worker, and deliver its source and static export.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "create-audio",
+      "description": "Produce narration, speech or music with the contributor's explicitly installed audio tool.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "create-image",
+      "description": "Produce the requested image with the contributor's explicitly installed image tool.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "create-video",
+      "description": "Produce a video using the contributor's explicitly installed video tool.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "custom-token-launch",
+      "description": "A requester's own ERC-20, with their pool share and opening cap, launched through ProjectFactory with ten percent of the supply to the swarm.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "defi-native",
+      "description": "DeFi capital-markets foundations for vaults, yield, lending, stablecoins, oracles, RWAs, and liquidity risk.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "deploy-script",
+      "description": "Write a Foundry deployment script whose parameters come from configuration, and prove it runs.",
+      "role": "implement",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "design-critic",
+      "description": "Review a finished website against its brief and a measured design bar, and write nothing.",
+      "role": "review",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "eth-addresses",
+      "description": "Austin Griffith's ethskills table of major protocol addresses on mainnet and L2s (stablecoins, WETH, Lido, Uniswap, Aave, Compound, Chainlink, Safe, ERC-4337 and more), each to be verified on chain before use.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "eth-concepts",
+      "description": "Austin Griffith's ethskills mental models for onchain systems: nothing is automatic, who calls each state transition and why, incentive design, randomness, and the CROPS properties.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "eth-frontend-ux",
+      "description": "Austin Griffith's ethskills dApp UX rules: per-button pending states, the connect/switch/approve/execute flow, address and amount display, error translation, RPC polling and pre-publish metadata.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "eth-l2s",
+      "description": "Austin Griffith's ethskills L2 landscape: Arbitrum, Optimism, Base, Unichain, Celo, Robinhood Chain, zkSync, Scroll and Linea, with chain ids, deployment differences, trust caveats and bridging.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "eth-security",
+      "description": "Austin Griffith's ethskills Solidity safety checklist: token decimals, integer math, external-call ordering, price sources, vault share rounding, approvals, access control, proxies, signatures and a pre-deploy list.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "eth-standards",
+      "description": "Austin Griffith's ethskills notes on ERC-8004 agent identity, x402 payments, EIP-3009, EIP-7702, ERC-4337, ERC-2612 permit and related standards, with their status as of upstream's date.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "eth-testing",
+      "description": "Austin Griffith's ethskills Foundry testing guide: failure-path unit tests, bounded fuzzing, fork tests for outside protocols, handler-based invariants, and what not to test.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "evm-contracts-launch",
+      "description": "Application contracts without a protocol launch token, distributor or liquidity pool.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "evm-project-launch",
+      "description": "Constructor-only EVM projects with a launch token, a pool with factory-only initialization, and contributor rewards.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "fix-findings",
+      "description": "Address the blocking findings of a review, exactly those, and answer the ones that do not hold.",
+      "role": "implement",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "frontend-for-contract",
+      "description": "Build and validate a wallet-connected frontend for deployed contracts, delivering source and a static export.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "fwa-v2",
+      "description": "Contracts that work with Fake World Assets (fwa.fun) V2 on Ethereum - buying a random NFT from the main pool, settling it within the window, and moving FWA and ETH through its token rules and ETH/FWA market.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "gas-and-size-report",
+      "description": "Measure a project's gas use and contract sizes, record them in reports/gas.md, and refuse a contract that will not deploy.",
+      "role": "tests",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "implement-and-test",
+      "description": "One worker writes the contract and its tests, for a change small enough not to need a second pair of hands.",
+      "role": "implement",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "implement-component",
+      "description": "Implement a scoped component against agreed interfaces while other contributors build independent components.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "implement-contract",
+      "description": "Write the contract, and leave the tests to somebody who did not write it.",
+      "role": "implement",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "implement-one-contract",
+      "description": "Write one contract out of several being built in parallel by different workers.",
+      "role": "implement",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "import-site",
+      "description": "Build the static export of a website somebody else wrote, from their repository as it stands, so it can be hosted.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "intake-client",
+      "description": "Contracts that open IdentityMD work on chain through the Intake - jobs, launches, workflows and continuations, paid in IMD, for the contract itself or for its users - and act on the result that comes back, on Ethereum and Robinhood Chain.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "integrate-project",
+      "description": "Integrate accepted parallel branches and validate the combined project against its original requirements.",
+      "role": "integrate",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "oracle-assess",
+      "description": "Answer a typed on-chain question from a pinned request, with the recipe that reproduces it.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "oracle-consumer",
+      "description": "Contracts that buy an IdentityMD oracle answer on chain through the Intake and verify the signed attestation, on Ethereum and Robinhood Chain, with the answer delivered on the asking chain or another one.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "pashov-fizz",
+      "description": "Pashov fizz invariant discovery and property patterns, applied with Foundry invariant tests.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "pashov-skill",
+      "description": "Pashov Solidity audit methodology with twelve specialties and evidence-based finding validation.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "pashov-xray",
+      "description": "Pashov x-ray failure-mode catalog and invariant templates, for auditing a contract project's entry points and assumptions.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "public-rpcs",
+      "description": "Public JSON-RPC endpoints and chain ids for every chain Chainlist knows, ordered for rotation, and how a keyed endpoint reaches a task.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "refine-project",
+      "description": "Change an existing project to address specific reported problems, without rebuilding it.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "research-report",
+      "description": "Research a question and deliver a reusable report with sources and uncertainty.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "scaffold-project",
+      "description": "Build a working project from an empty tree — its layout, its build configuration, and the thing itself.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "site-content-check",
+      "description": "Read a website that is about to be hosted under our name for content that must not be hosted, and write nothing.",
+      "role": "review",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "solidity-security-review",
+      "description": "Lightweight Solidity threat-model reference for a scoped review; does not create a review assignment.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "tob-entry-point-analyzer",
+      "description": "Trail of Bits entry-point analysis for Solidity - every state-changing entry point and who may call it.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "tob-property-based-testing",
+      "description": "Trail of Bits property-based testing guidance - choosing, writing, reviewing and debugging properties.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "token-logo",
+      "description": "Draw a launched token's logo with this machine's image generation, looked at small before it is submitted.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "uniswap-v4-hooks",
+      "description": "Uniswap v4 hook design knowledge (hook types, permissions, utilities, shares, access control), adapted from Uniswap's v4-hook-generator.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "uniswap-v4-security",
+      "description": "Security-first Uniswap v4 hook development.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "wallet-connectors",
+      "description": "The one wallet stack every site on the network ships, with no relay and no account: browser wallets by EIP-6963, phones by opening the page in the wallet's own browser, and Coinbase Smart Wallet for visitors with no wallet, behind one connect control.",
+      "role": "reference",
+      "tier": null,
+      "kind": "code"
+    },
+    {
+      "id": "workflow-planner",
+      "description": "Propose a bounded parallel workflow as JSON for control-plane validation, without executing it.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    },
+    {
+      "id": "write-foundry-tests",
+      "description": "Test somebody else's accepted implementation, including the paths it would rather you did not take.",
+      "role": "tests",
+      "tier": 1,
+      "kind": "code"
+    },
+    {
+      "id": "write-readme-and-docs",
+      "description": "Document a delivered project for a stranger who has to run it, use it and change it.",
+      "role": "implement",
+      "tier": 2,
+      "kind": "code"
+    }
+  ]
+}

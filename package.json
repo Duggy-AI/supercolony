@@ -1,0 +1,58 @@
+{
+  "name": "supercolony",
+  "version": "0.1.8",
+  "description": "CLI for publishing and browsing IMD tasks and operating IMD workers",
+  "type": "module",
+  "bin": {
+    "supercolony": "dist/cli.mjs",
+    "colony": "dist/cli.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:dist": "npm run build && node scripts/test-dist.mjs",
+    "build": "node scripts/build.mjs",
+    "check:package": "node scripts/check-package.mjs",
+    "prepack": "npm run build"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duggy-AI/supercolony.git"
+  },
+  "homepage": "https://github.com/Duggy-AI/supercolony#readme",
+  "bugs": {
+    "url": "https://github.com/Duggy-AI/supercolony/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@x402/core": "2.28.0",
+    "@x402/evm": "2.28.0",
+    "commander": "^15.0.0",
+    "ethers": "6.17.0",
+    "ink": "8.0.0",
+    "ink-text-input": "6.0.0",
+    "node-llama-cpp": "3.22.2",
+    "proper-lockfile": "4.1.2",
+    "qrcode": "1.5.4",
+    "react": "19.3.0",
+    "string-width": "8.3.0",
+    "viem": "^2.57.7",
+    "wrap-ansi": "9.0.0"
+  },
+  "devDependencies": {
+    "@lydell/node-pty": "1.2.0-beta.15",
+    "esbuild": "0.28.2",
+    "ink-testing-library": "4.0.0",
+    "javascript-obfuscator": "5.9.0",
+    "jsqr": "1.4.0"
+  }
+}

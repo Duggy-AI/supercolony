@@ -1,0 +1,11 @@
+.research/
+test/
+node_modules/
+.super-colony/
+drafts/
+*.tgz
+.gitignore
+.env
+.env.*
+coverage/
+.local/

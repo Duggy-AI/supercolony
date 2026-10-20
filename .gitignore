@@ -1,0 +1,43 @@
+# Dependencies, generated output and local investigation
+node_modules/
+/.research/
+/.local/
+/dist/
+/output/
+coverage/
+*.tgz
+*.log
+*.tsbuildinfo
+/container/validation-*/
+
+# Local credentials (safe example templates may be committed)
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.keystore.json
+
+# Colony runtime state must never be published
+.super-colony/
+/wallet.json
+/wallets/
+/wallet-selection.json
+/payment-network.json
+/orders/
+/drafts/
+/backups/
+
+# Downloaded model weights and caches
+*.gguf
+*.safetensors
+.cache/
+
+# OS/editor temporary files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~

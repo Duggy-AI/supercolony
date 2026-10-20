@@ -1,0 +1,27 @@
+name: colony-worker-test
+
+services:
+  worker:
+    image: colony-worker-test:local
+    build:
+      context: ..
+      dockerfile: container/Dockerfile
+    container_name: colony-worker-test
+    # The container stays up so validation can exec into it.  The worker
+    # itself is only started after pairing; see docs/container-validation.md.
+    command: ["sleep", "infinity"]
+    restart: unless-stopped
+    environment:
+      COLONY_HOME: /home/colony/.super-colony
+      IDENTITYMD_HOME: /home/colony/.identitymd
+    volumes:
+      - colony-worker-test-home:/home/colony
+    # No ports: the official worker dials out over WSS and needs no inbound
+    # port.  Add a loopback-only port in an override file if an isolated sshd
+    # is ever needed; do not mount the host home, keys, or Docker socket.
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  colony-worker-test-home:
+    name: colony-worker-test-home

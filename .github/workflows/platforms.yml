@@ -1,0 +1,34 @@
+name: CLI and local planner
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, ubuntu-24.04-arm, macos-latest, macos-15-intel]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check:package
+      - run: npm run test:dist
+      - uses: actions/cache@v4
+        with:
+          path: .local/model-validation/models
+          key: qwen35-q4-k-m-bd258782e35f7f45
+      - run: node scripts/validate-planner.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: planner-${{ matrix.os }}
+          path: .local/planner-evaluation-*.json
